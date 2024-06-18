@@ -6,38 +6,52 @@
     <title>Document</title>
   </head>
   <body>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 20px;
+        text-align: center;
+      }
+      tr:nth-child(2){background-color: orange;}
+      tr:nth-child(1) th:not(:first-child){background-color: yellow;}
+     
+      section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 50px;
+        color: blue;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .left-content {
+        text-align: left;
+      }
+      .right-content {
+        text-align: right;
+      }
+    </style>
     <h1>THỜI KHÓA BIỂU</h1>
-    <table border="1">
-      <style>
-        table,
-        th,
-        td {
-          border: 1px solid black;
-          border-collapse: collapse;
-        }
-      </style>
-      <tr>
-        <th>Lớp:10A2</th>
-        <th>Thời gian học:8h-17h</th>
-      </tr>
-      <tr>
-        <th>Giáo viên:Nguyễn Văn A</th>
-        <th>Ngày học: Thứ 3,5,7</th>
-      </tr>
-      <tr>
-        <th>Phòng học:302</th>
-      </tr>
-    </table>
+    <section>
+      <aside class="left-content">
+        <p>Lớp:10A2</p>
+        <p>Thời gian học:8h-17h</p>
+        <p>Phòng học:302</p>
+      </aside>
+      <aside class="right-content">
+        <p>Giáo viên:Nguyễn Văn A</p>
+        <p>Ngày học: thứ 3,5,7</p>
+      </aside>
+    </section>
+
     <br />
-    <table border="1">
-      <style>
-        table,
-        th,
-        td {
-          border: 1px solid black;
-          border-collapse: collapse;
-        }
-      </style>
+    <table width="100%" border="1">
       <tr>
         <th colspan="3"></th>
         <th>Thứ 3</th>
